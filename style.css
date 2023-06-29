@@ -133,14 +133,13 @@ padding: 150px 30px;
         margin-right: 10px;
     }
     .navbar-collapse{
-
         margin-top: 70px;
         border-radius: 5px;
         padding: 20px 0;
         justify-content:initial !important;
 
     }
-    .desktopBg, .mockups{
+    .desktopBg{
         display: none;
     }
     .heading{
@@ -151,9 +150,19 @@ padding: 150px 30px;
         width: 100%;
         padding: 0 !important;
     }
+ 
     .left-side{
+        z-index: -1000;
         background-image: url(images/bg-intro-mobile.svg);
         background-repeat: no-repeat;
+        position: relative;
+
+    }
+    .mockups{
+        top: -60px;
+        height: 450px;
+        z-index: -1;
+        
     }
     .right-side{
         width: 100%;
