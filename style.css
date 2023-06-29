@@ -104,10 +104,22 @@ padding: 150px 30px;
 }
 .second-page{
     background-color:hsl(220, 16%, 96%);
-    padding: 150px 0;
+  padding: 150px 0;
 }
 .whyChoose{
-    width: 10%;
+   max-width: 600px;
+}
+
+.second-page .right-column{
+    margin-top: 80px !important;
+    font-weight: 300;
+    font-size: 18px;
+}
+.second-page .right-column h5{
+    margin: 30px 0;
+}
+.second-page .right-column p{
+    font-weight: 300;
 }
 
 /* main */
@@ -154,12 +166,13 @@ padding: 150px 30px;
         width: 90%;
         font-size: 45px;
         text-align: center;
-        margin-left:25px ;
-        margin-top: -30px !important;
+        margin-left:20px ;
+        margin-top: -100px !important;
     }
     .main{
         width: 100%;
         padding: 0 !important;
+        height: 100vh;
     }
     .left-side{
         max-width: 500px;
@@ -179,7 +192,8 @@ padding: 150px 30px;
 
     }
     .mockups{
-        margin-top: -80px;
+        scale: 90%;
+        margin-top: -85px;
        max-width: 500px;
        width: 100%;
        margin-left: -5px;
@@ -198,12 +212,45 @@ padding: 150px 30px;
         padding-right: 0px !important;
         padding: 0px 25px !important;
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 300;
 }
 .requestBtn {
     margin-left: 50%;
     transform: translateX(-50%);
+}
 
+.second-page{
+    padding-top: 80px !important;
+}
+.whyChoose{
+        text-align: center;
+        width: 100%;
+
+}
+
+.whyChoose h2{
+    font-size:40px;
+    font-weight: 300;
+
+}
+
+
+
+.second-page .right-column{
+    margin-top: -20px !important;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.right-column h5{
+    padding: 20px 0;
+    margin-bottom: 0px !important;
+}
+.division{
+    margin-top: 25px !important;
+    padding: 0px 25px !important;
+font-weight: 300;
 }
 
 
