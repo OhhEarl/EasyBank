@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyBank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+    rel="stylesheet"
+    />
+</head>
+<body style=" background-color:  hsl(0, 0%, 98%)">
+  <div class="container-fluid"  style="background-color: white;">
+    <nav class="navbar navbar-expand-md "   style="height: 70px;">
+        <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="Logo"></a>
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+           <img src="images/icon-hamburger.svg" class="menuBtn" alt="Menu">
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav text-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Careers</a>
+              </li>
+
+            </ul>
+          </div>
+          <div>
+            <button class="requestBtn">Request Invite</button>
+          </div>
+        </div>
+      </nav>
+ </div>
+
+
+    <div class="container-fluid main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md col-left">
+            <div class="left-side">
+              <h1 class="heading">Next generation digital banking</h1>
+              <p class="paragraph mt-3"> Take your financial life online. Your Easybank account will be a one-stop-shop 
+              for spending, saving, budgeting, investing, and much more.</p>
+              <button class="requestBtn mt-3">Request Invite</button>
+            </div>
+           </div>
+         <div class="col-md">
+          <div class="right-side">
+            <img src="images/bg-intro-desktop.svg" class="desktopBg" alt="Desktop background-color">
+            <img src="images/image-mockups.png" class="mockups" alt="Image Mockups">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="second-page">
+      <div class="container">
+        <div class="whyChoose">
+          <h4>
+            Why choose Easybank?
+          </h4>
+          <!-- <p>
+          We leverage Open Banking to turn your bank account into your financial hub. Control 
+          your finances like never before. -->
+          </p>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-3">
+            <img src="images/icon-budgeting.svg" alt="Budgeting Money">
+          <h5>Online Banking</h5>
+          <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
+          </div>
+          <div class="col-md-3">
+            <img src="images/icon-budgeting.svg" alt="Budgeting Money">
+            <h5>Online Banking</h5>
+          <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
+          </div>
+          <div class="col-md-3">
+            <img src="images/icon-budgeting.svg" alt="Budgeting Money">
+            <h5>Online Banking</h5>
+            <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
+          </div>
+          <div class="col-md-3">
+            <img src="images/icon-budgeting.svg" alt="Budgeting Money">
+            <h5>Online Banking</h5>
+            <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
+          </div>
+  
+        </div>
+      </div>
+      
+    </section>
+    
+</body>
+</html>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+></script>
+
+<script>
+  const container = document.querySelector('.right-side');
+const image = document.querySelector('.desktopBg');
+
+function cropImage() {
+  const containerWidth = container.offsetWidth;
+  const containerHeight = container.offsetHeight;
+  const imageWidth = image.offsetWidth;
+  const imageHeight = image.offsetHeight;
+  
+  // Calculate the scale ratio
+  const scaleX = containerWidth / imageWidth;
+  const scaleY = containerHeight / imageHeight;
+  const scale = Math.max(scaleX, scaleY);
+  
+  // Apply the scale and position the image to crop
+  image.style.transform = `scale(${scale})`;
+  image.style.transformOrigin = 'top left';
+  
+  // Adjust the image's dimensions to fit within the container
+  const scaledImageWidth = imageWidth * scale;
+  const scaledImageHeight = imageHeight * scale;
+  image.style.width = `${scaledImageWidth}px`;
+  image.style.height = `${scaledImageHeight}px`;
+}
+
+cropImage();
+
+</script>

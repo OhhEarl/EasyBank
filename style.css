@@ -1,0 +1,167 @@
+*{
+    font-family: 'Public Sans', sans-serif;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;   
+}
+
+/* navbar */
+
+.navbar{
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: none !important;
+    width: 90%;
+    margin-left: 5%;
+    z-index: 1000;
+}
+
+.requestBtn{
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    background: linear-gradient(90deg, rgba(49,211,92,1) 0%, rgba(43,183,218,1) 100%);
+}
+.nav-link{
+    position: relative;
+
+}
+li{
+    padding: 0px 10px;
+    font-weight: 400;
+}
+.nav-link::after {
+    content: ''; /* Create an empty pseudo-element */
+    display: block; /* Ensure the pseudo-element takes up space */
+    position: absolute; /* Position it relative to the parent */
+    left: 0; /* Align it with the left edge of the parent */
+    bottom: -15px; /* Position it just below the text */
+    width: 100%; /* Extend it to cover the entire width of the parent */
+    height: 3px; /* Set the height of the line */
+    background: linear-gradient(90deg, rgba(49,211,92,1) 0%, rgba(43,183,218,1) 100%);
+    transform: scaleX(0); /* Initially hide the line */
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+  }
+  
+  .nav-link:hover::after,
+  .nav-link:active::after {
+    transform: scaleX(1); /* Scale the line to show it on hover and when active */
+  }
+/* navbar */
+
+/* main */
+.main{
+    height: 90vh;
+    z-index: -1000;
+}
+.bg-desktop{
+    position: absolute;
+    right: 0;
+    top: -180px;
+}
+
+.left-side{
+padding: 150px 30px;
+}
+
+.heading{
+    font-size: 64px;
+    font-weight: 300;
+}
+
+.paragraph   {
+    font-size: 18px;
+    padding-right: 110px;
+    font-weight: 400;
+}
+
+.right-side{
+    width: 113.3%;
+    height: 100vh;
+    overflow: hidden;
+}
+.desktopBg{
+    z-index: 1;
+    margin-top: -260px;
+    scale: 136%;
+    display: block;
+    width: 100% ;
+    max-width: 100%;
+    height: 100%;
+    transform: scale(1); /* Required for the cropping effect */
+    transform-origin: top left; /* Required for the cropping effect */
+}
+.mockups{
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    top: 0;
+}
+.second-page{
+    background-color:hsl(220, 16%, 96%);
+    padding: 150px 0;
+}
+.whyChoose{
+    width: 10%;
+}
+
+/* main */
+
+
+@media only screen and ( max-width : 720px) and ( min-width : 344px) {
+
+
+    .requestBtn{
+        display: none;
+    }
+    .navbar{
+        padding: none;
+        height: 70px;
+    }
+    .navbar-brand{
+        position: absolute;
+        z-index: 1000;
+        margin-left: 15px;
+    }
+    .menuBtn{
+        position: absolute;
+        right: 0;
+        top: 30px;
+        height: 15px;
+        margin-right: 10px;
+    }
+    .navbar-collapse{
+
+        margin-top: 70px;
+        border-radius: 5px;
+        padding: 20px 0;
+        justify-content:initial !important;
+
+    }
+    .desktopBg, .mockups{
+        display: none;
+    }
+    .heading{
+        font-size: 52px;
+        text-align: center;
+    }
+    .main{
+        width: 100%;
+        padding: 0 !important;
+    }
+    .left-side{
+        background-image: url(images/bg-intro-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    .right-side{
+        width: 100%;
+    }
+    .col-left{
+        padding: 0 !important;
+    }
+
+
+
+}
