@@ -67,6 +67,7 @@ padding: 150px 30px;
 }
 .left-column{
     max-width: 800px;
+
 }
 
 .heading{
@@ -78,6 +79,8 @@ padding: 150px 30px;
     font-size: 18px;
     padding-right: 110px;
     font-weight: 400;
+    color: hsl(233, 8%, 62%)
+
 }
 
 .right-side{
@@ -262,6 +265,7 @@ footer .icons{
         max-width: 500px;
         max-height: 700px;
         padding: 0;
+        margin-top: 70px;
     }
  
     .div{
@@ -289,6 +293,8 @@ footer .icons{
     }
     .col-left{
         padding: 0 !important;
+        background: linear-gradient(360deg, rgba(164,218,43,0.1092086492800245) 27%, rgba(45,49,77,1) 100%);
+  
     }
 .paragraph{
         width: 100%;
